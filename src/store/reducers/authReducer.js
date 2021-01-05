@@ -23,7 +23,8 @@ const authReducer = (state = initialState, action)=>{
             ...state,
             loading:false,
             token:action.token,
-            user:action.user
+            user:action.user,
+            redirection:true
         }
         case actionTypes.AUTH_FALSIFY_REDIRECT:
         return{

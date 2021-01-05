@@ -10,6 +10,7 @@ import {answerSaga,latestAnswerSaga} from './answerSaga';
 import {statusSaga} from './statusSaga';
 import {notificationSaga} from './notificationSaga';
 import {percentageSaga} from './percentageSaga';
+import {reportSaga,downloadReportSaga} from'./reportSaga';
 
 export function* mySagas(){
     yield takeEvery(actionTypes.INIT_CLASSES,initClassesSaga);
@@ -29,6 +30,8 @@ export function* mySagas(){
     yield takeEvery(actionTypes.NOTIFICATION,notificationSaga);
     yield takeEvery(actionTypes.PERCENTAGE,percentageSaga);
     yield takeEvery(actionTypes.LATEST_ANSWER,latestAnswerSaga);
+    yield takeEvery(actionTypes.REPORT,reportSaga);
+    yield takeEvery(actionTypes.DOWNLOAD_REPORT,downloadReportSaga);
     
 }
 

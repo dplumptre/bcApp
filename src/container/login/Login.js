@@ -102,7 +102,7 @@ class Login extends Component {
 
          let  destination =null;
 
-         if(this.props.user){
+         if(this.props.redirect){
           // if(this.props.user.access === '1' ){
           //   destination = <Redirect to='/dashboard'/>
           // }else if(this.props.user.access === '2'){
@@ -156,6 +156,7 @@ const mapStateToProps = state =>{
    loading: state.authReducer.loading,
    error:state.authReducer.error,
    user :state.authReducer.user,
+   redirect: state.authReducer.redirection
   }
  }
 

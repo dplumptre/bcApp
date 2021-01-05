@@ -9,12 +9,32 @@ let mainNav = null;
 
 
 if(props.isAuth){
+
+
+
+
+   let adminMenu = (
+   <Aux>
+    <NavLink className="nav-item nav-link" to="/answers">Answers</NavLink> 
+    <NavLink className="nav-item nav-link" to="/reports">Reports</NavLink>
+    </Aux>
+   );
+
+   let userMenu = (
+    <Aux>
+    <NavLink className="nav-item nav-link" to="/classes">Classes</NavLink>
+    <NavLink className="nav-item nav-link" to="/notifications">Notifications</NavLink>
+     </Aux>
+    );
+  
+
+
   mainNav = (
     <Aux>
-    <NavLink className="nav-item nav-link" to="/dashboard">Dashboard</NavLink>
-      <NavLink className="nav-item nav-link" to="/answers">Answers</NavLink>
-      <NavLink className="nav-item nav-link" to="/classes">Classes</NavLink>
-      <NavLink className="nav-item nav-link" to="/notifications">Notifications</NavLink>
+    <NavLink className="nav-item nav-link" to="/dashboard">Dashboard </NavLink>
+
+    {props.userInfo.access === '1' ?  userMenu:adminMenu}
+
     </Aux> 
 );
 }

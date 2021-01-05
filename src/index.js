@@ -20,6 +20,7 @@ import answerReducer from './store/reducers/answerReducer';
 import statusReducer from './store/reducers/statusReducer';
 import notificationReducer from './store/reducers/notificationReducer';
 import percentageReducer from './store/reducers/percentageReducer';
+import reportReducer from './store/reducers/reportReducer';
 //import {} from './store/reducers/'
 
 
@@ -34,7 +35,8 @@ const rootReducers = combineReducers({
   authReducer,
   statusReducer,
   notificationReducer,
-  percentageReducer
+  percentageReducer,
+  reportReducer,
 
 
 })

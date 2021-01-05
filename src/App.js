@@ -20,6 +20,7 @@ import ForgetPasswordPage from './container/forget-password/ForgetPassword';
 import ViewAnswer from './components/answer/ViewAnswer';
 import ActivationPage from './container/activation/Activation';
 import NotificationPage from './container/notification/notification';
+import ReportPage from './container/report/Reports';
 
 import * as actions from './store/actions/index';
 
@@ -55,6 +56,7 @@ class App extends Component {
                 <Route path="/dashboard" exact component={DashboardPage} />
                 <Route path="/questions" exact component={QuestionPage} />
                 <Route path="/answers" exact component={AnswersPage} />
+                <Route path="/reports" exact component={ReportPage} />
                 <Route path="/view-answer" exact component={ViewAnswer} />  
                 <Redirect to='/dashboard' /> 
               </Switch>

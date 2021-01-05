@@ -50,7 +50,7 @@ useEffect(()=>{
             <div className="d-flex flex-row">
             <div className="p-2"><Link className="btn btn-success" to="/classes">Start Class</Link></div>
             <div className="p-2"><Link className="btn btn-danger" to='/notifications'>Notifications</Link></div>
-            </div>
+           </div>
         
         </div>
     </Aux> 

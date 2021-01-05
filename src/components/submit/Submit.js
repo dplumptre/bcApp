@@ -8,7 +8,7 @@ const Submit = props =>{
         <div className="col-12">
             <div className="alert alert-success" role="alert">
             <h4 className="alert-heading">Well done!</h4>
-            <p>  Your answers has been sent kindly check your emails for instructions 
+            <p>  Your answers has been sent kindly check your emails and notification page for feedback
             </p>
             <hr />
             <Link to='/dashboard' className="btn btn-success mt-3 mb-3 ">Back to dashboard</Link>
