@@ -61,7 +61,13 @@ class StatusForm extends Component {
           answerId: this.state.answerId
         }
          console.log(info);
-         this.props.status(info, this.props.token);
+        if(!this.state.myForm.status || this.state.myForm.status === ""){
+          alert('select status!');
+        }else{
+          this.props.status(info, this.props.token);
+        }
+
+         
         // const v = new formValidation();
         // const {myForm,formErrors} = this.state;
         // if(v.isformValid(formErrors,myForm)){

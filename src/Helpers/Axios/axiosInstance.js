@@ -5,7 +5,7 @@ import axios from 'axios';
 const axiosInstance = axios.create({
   //baseURL : 'http://bcapi.local/api/',
    //baseURL : 'https://believersclassapp.tfolc.org/api/',
-   baseURL :  'https://believersclassapi.tfolc.org/api/',
+  baseURL :  'https://believersclassapi.tfolc.org/api/',
              
    
    
@@ -18,4 +18,4 @@ const axiosInstance = axios.create({
  
 
 
-export default axiosInstance;
+export default axiosInstance; 
